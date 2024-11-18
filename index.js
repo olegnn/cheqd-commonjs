@@ -1,0 +1,1 @@
+require("@cheqd/sdk");

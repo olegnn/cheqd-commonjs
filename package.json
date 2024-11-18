@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@cheqd/sdk": "^4.0.5"
+  }
+}
