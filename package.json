@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "@cheqd/sdk": "^5.1.0-develop.10"
+    "@cheqd/sdk": "5.1.0-develop.11"
   }
 }
