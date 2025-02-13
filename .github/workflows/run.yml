@@ -6,7 +6,7 @@ on:
 
 jobs:
   yarn:
-    name: Run Yarn and Node
+    name: Run NPM and Node
     runs-on: ubuntu-latest
 
     steps:
