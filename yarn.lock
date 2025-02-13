@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@bufbuild/protobuf/-/protobuf-2.2.3.tgz#9cd136f6b687e63e9b517b3a54211ece942897ee"
   integrity sha512-tFQoXHJdkEOSwj5tRIZSPNUuXK3RaR7T1nUrPgbYX1pUbvqqaaZAsfo+NXBPsz5rZMSKVFrgK1WL8Q/MSLvprg==
 
-"@cheqd/sdk@beta":
-  version "5.1.0-develop.9"
-  resolved "https://registry.yarnpkg.com/@cheqd/sdk/-/sdk-5.1.0-develop.9.tgz#6a46c82f5d73d2e45d6c5d8435cda2e5dba3e3e1"
-  integrity sha512-FTJeSVlD+YK+tdM0Y+tuW5LnBA8qX8fSybAciD3NN5DaMUQsLiohcBP4M6DEYiyRDmnLY8BzOsnZ8nLxacKSjw==
+"@cheqd/sdk@^5.1.0-develop.10":
+  version "5.1.0-develop.10"
+  resolved "https://registry.yarnpkg.com/@cheqd/sdk/-/sdk-5.1.0-develop.10.tgz#6068666d9ec282696620750c367d8c4fa702529e"
+  integrity sha512-z+AEcK58cYxR0xGJ5eVLkpajGp7KvE/yyO8Muc5h3YqNqXDXQbPsxXDvaZYW5q2t0GM0MW+cJIlweiF+952a0A==
   dependencies:
     "@cheqd/ts-proto" "^4.0.0"
     "@cheqd/ts-proto-cjs" "npm:@cheqd/ts-proto@~2.4.0"
@@ -49,6 +49,8 @@
     multiformats-cjs "npm:multiformats@^9.9.0"
     secp256k1 "^5.0.0"
     secp256k1-cjs "npm:secp256k1@^5.0.0"
+    uint8arrays "^5.1.0"
+    uint8arrays-cjs "npm:uint8arrays@^3.1.1"
     uuid "^10.0.0"
     uuid-cjs "npm:uuid@^10.0.0"
 
@@ -966,6 +968,11 @@ multibase@^4.0.6:
   resolved "https://registry.yarnpkg.com/multiformats/-/multiformats-9.9.0.tgz#c68354e7d21037a8f1f8833c8ccd68618e8f1d37"
   integrity sha512-HoMUjhH9T8DDBNT+6xzkrd9ga/XiBI4xLr58LJACwK6G3HTOPeMz4nB4KJs33L2BelrIJa7P0VuNaVF3hMYfjg==
 
+multiformats@^13.0.0:
+  version "13.3.2"
+  resolved "https://registry.yarnpkg.com/multiformats/-/multiformats-13.3.2.tgz#a77c2a09c490e90c73b3049551604e6e1a4854e0"
+  integrity sha512-qbB0CQDt3QKfiAzZ5ZYjLFOs+zW43vA4uyM8g27PeEuXZybUOFyjrVdP93HPBHMoglibwfkdVwbzfUq8qGcH6g==
+
 multiformats@^13.3.0:
   version "13.3.1"
   resolved "https://registry.yarnpkg.com/multiformats/-/multiformats-13.3.1.tgz#ea30d134b5697dcf2036ac819a17948f8a1775be"
@@ -1144,12 +1151,26 @@ uint8array-extras@^1.3.0:
   resolved "https://registry.yarnpkg.com/uint8array-extras/-/uint8array-extras-1.4.0.tgz#e42a678a6dd335ec2d21661333ed42f44ae7cc74"
   integrity sha512-ZPtzy0hu4cZjv3z5NW9gfKnNLjoz4y6uv4HlelAjDK7sY/xOkKZv9xK/WQpcsBB3jEybChz9DPC2U/+cusjJVQ==
 
+"uint8arrays-cjs@npm:uint8arrays@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/uint8arrays/-/uint8arrays-3.1.1.tgz#2d8762acce159ccd9936057572dade9459f65ae0"
+  integrity sha512-+QJa8QRnbdXVpHYjLoTpJIdCTiw9Ir62nocClWuXIq2JIh4Uta0cQsTSpFL678p2CN8B+XSApwcU+pQEqVpKWg==
+  dependencies:
+    multiformats "^9.4.2"
+
 uint8arrays@3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/uint8arrays/-/uint8arrays-3.1.1.tgz#2d8762acce159ccd9936057572dade9459f65ae0"
   integrity sha512-+QJa8QRnbdXVpHYjLoTpJIdCTiw9Ir62nocClWuXIq2JIh4Uta0cQsTSpFL678p2CN8B+XSApwcU+pQEqVpKWg==
   dependencies:
     multiformats "^9.4.2"
+
+uint8arrays@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/uint8arrays/-/uint8arrays-5.1.0.tgz#14047c9bdf825d025b7391299436e5e50e7270f1"
+  integrity sha512-vA6nFepEmlSKkMBnLBaUMVvAC4G3CTmO58C12y4sq6WPDOR7mOFYOi7GlrQ4djeSbP6JG9Pv9tJDM97PedRSww==
+  dependencies:
+    multiformats "^13.0.0"
 
 undici-types@~6.19.8:
   version "6.19.8"
