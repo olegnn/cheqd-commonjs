@@ -1,1 +1,1 @@
-require("@cheqd/sdk");
+const sdk = require("@cheqd/sdk");
